@@ -1,0 +1,117 @@
+$primary-green: #029491;
+$primary-black: #000;
+$primary-white: #fff;
+$secondary-yellow: #ffb64f;
+$secondary-green: #7ce3e1;
+$secondary-blue: #5970ff;
+
+@font-face {
+  font-family: 'Ferry';
+  src: url('../../assets/fonts/ferry_black.otf');
+}
+
+.main__part1 {
+  margin: 69px auto 0 auto;
+  padding: 0 60px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__textWrapper {
+  width: 743px;
+  margin-right: -100px;
+  z-index: 1;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.main__header {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.main__description {
+  margin-top: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main__part1Button {
+  margin-top: 70px;
+  width: 335px;
+  height: 59px;
+  background-color: $secondary-blue;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: $primary-white;
+}
+
+.main__picture {
+  margin-top: -18px;
+  // margin-right: -16px;
+}
+
+.main__part2 {
+  margin: 109px auto 0 auto;
+  padding: 0 60px;
+  max-width: 1440px;
+}
+
+.part2__header {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 54px;
+}
+
+.part2__carousel {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.part2__card {
+  display: none;
+}
+
+.part2__leftArrow {
+  margin-left: -13px;
+  cursor: pointer;
+}
+
+.part2__rightArrow {
+  margin-right: -13px;
+  cursor: pointer;
+}
+
+.main__part3 {
+  margin: 107px auto 116px auto;
+  padding: 0 60px;
+  max-width: 1440px;
+}
+
+.part3__header {
+  margin-bottom: 70px;
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 54px;
+}
+
+.part3__tarifsCards {
+  display: flex;
+  justify-content: space-between;
+}

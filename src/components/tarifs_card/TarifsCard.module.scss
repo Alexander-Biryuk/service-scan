@@ -1,0 +1,99 @@
+$primary-green: #029491;
+$primary-black: #000;
+$primary-white: #fff;
+$secondary-yellow: #ffb64f;
+$secondary-green: #7ce3e1;
+$secondary-blue: #5970ff;
+
+.card {
+  width: 415px;
+  height: 540px;
+  border: 2px solid $secondary-yellow;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card__header {
+  background-color: $secondary-yellow;
+  height: 132px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.card__headerText {
+  font-family: 'Inter';
+  font-style: normal;
+  margin-left: 30px;
+  h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.card__info {
+  margin: 12px 0 10px 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  div {
+    margin-left: 238px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 0;
+    width: 134px;
+    height: 24px;
+    background: #3ba5e0;
+    color: $primary-white;
+    border-radius: 10px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  span {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration-line: line-through;
+    opacity: 0.5;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  h4 {
+    margin-top: 59px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  li {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  li::before {
+    content: url('../../assets/check-mark.svg');
+    margin-right: 8px;
+  }
+  button {
+    margin-top: 55px;
+    width: 355px;
+    height: 59px;
+    background: #d2d2d2;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}

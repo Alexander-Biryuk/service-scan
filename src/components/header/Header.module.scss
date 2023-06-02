@@ -1,0 +1,61 @@
+$primary-green: #029491;
+$primary-black: #000;
+$primary-white: #fff;
+$secondary-yellow: #ffb64f;
+$secondary-green: #7ce3e1;
+$secondary-blue: #5970ff;
+
+.header {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: $primary-white;
+}
+
+.header__container {
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1440px;
+  height: 93px;
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    margin-left: 108px;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 236px;
+}
+
+.header__login {
+  width: 251px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__verticalLine {
+  color: #029491;
+  font-size: 20px;
+}
+
+.header__registerButton {
+  opacity: 0.4;
+}
+
+.header__loginButton {
+  width: 65px;
+  height: 26px;
+  background-color: #7ce3e1;
+  border-radius: 5px;
+  font-weight: 500;
+}

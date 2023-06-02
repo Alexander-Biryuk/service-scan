@@ -1,0 +1,30 @@
+$primary-green: #029491;
+$primary-black: #000;
+$primary-white: #fff;
+
+.footer {
+  background-color: $primary-green;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1440px;
+  height: 137px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  margin: 25px 0;
+  text-align: right;
+  color: $primary-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
