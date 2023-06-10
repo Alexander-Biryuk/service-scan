@@ -11,9 +11,10 @@ import TarifsCard from '../tarifs_card/TarifsCard';
 import lamp from '../../assets/lamp.svg';
 import target from '../../assets/target.svg';
 import notebook from '../../assets/notebook.svg';
+import Caorusel from '../caorusel/Caorusel';
+import Caorusel3 from '../caorusel/Caorusel3';
 
 export default function Main() {
-  
   return (
     <main className={styles.main}>
       <section className={styles.main__part1}>
@@ -37,24 +38,27 @@ export default function Main() {
 
       <section className={styles.main__part2}>
         <h2 className={styles.part2__header}>Почему именно мы</h2>
-        <div className={styles.part2__carousel}>
+        <div className={styles.part2__sliderContainer}>
+          <Caorusel3 />
+        </div>
+        {/* <div className={styles.part2__carousel}>
           <img
             className={styles.part2__leftArrow}
             src={leftArrow}
             alt='leftArrow'
           />
           <CarouselCard
-            clock={clock}
+            icon={clock}
             text={'Высокая и оперативная скорость обработки заявки'}
           />
           <CarouselCard
-            clock={loupe}
+            icon={loupe}
             text={
               'Огромная комплексная база данных, обеспечивающая объективный ответ на запрос'
             }
           />
           <CarouselCard
-            clock={shield}
+            icon={shield}
             text={
               'Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству'
             }
@@ -64,7 +68,7 @@ export default function Main() {
             src={rightArrow}
             alt='rightArrow'
           />
-        </div>
+        </div> */}
         <img src={picture2} alt='' />
       </section>
 
@@ -85,8 +89,8 @@ export default function Main() {
               list3: 'Поддержка 24/7',
               button: 'Перейти в личный кабинет',
               colors: {
-                header: {bg: '#FFB64F', col: '#000'},
-                button: {bg: '#D2D2D2', col: '#000'},
+                header: { bg: '#FFB64F', col: '#000' },
+                button: { bg: '#D2D2D2', col: '#000' },
               },
             }}
           />
@@ -104,8 +108,8 @@ export default function Main() {
               list3: 'Рекомендации по приоритетам',
               button: 'Подробнее',
               colors: {
-                header: {bg: '#7CE3E1', col: '#000'},
-                button: {bg: '#5970FF', col: '#fff'},
+                header: { bg: '#7CE3E1', col: '#000' },
+                button: { bg: '#5970FF', col: '#fff' },
               },
             }}
           />
@@ -123,13 +127,13 @@ export default function Main() {
               list3: 'Приоритетная поддержка',
               button: 'Подробнее',
               colors: {
-                header: {bg: '#000', col: '#fff'},
-                button: {bg: '#5970FF', col: '#fff'},
+                header: { bg: '#000', col: '#fff' },
+                button: { bg: '#5970FF', col: '#fff' },
               },
             }}
           />
-          
         </div>
+        <Caorusel />
       </section>
     </main>
   );

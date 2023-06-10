@@ -1,0 +1,120 @@
+.container {
+  max-width: 1440px;
+  padding: 69px 141px 80px 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerAndPicture {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.header {
+  width: 720px;
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.picture {
+  margin: 14px 300px 0px 0px;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  color: #029491;
+  cursor: pointer;
+  div {
+    margin-left: 16px;
+  }
+}
+
+.formLines {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.formContainer {
+  // margin: 69px 141px 80px 0px;
+  width: 429px;
+  height: 523px;
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLogin,
+.formPassword {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #949494;
+}
+
+.formField {
+  margin-top: 15px;
+  width: 379px;
+  height: 43px;
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.formButton {
+  margin-top: 30px;
+  width: 379px;
+  height: 59px;
+  background-color: #5970ff;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.formRestorePass {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #5970ff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.formSocials {
+  margin-top: 15px;
+  cursor: pointer;
+  width: 308px;
+  display: flex;
+  justify-content: space-between;
+}

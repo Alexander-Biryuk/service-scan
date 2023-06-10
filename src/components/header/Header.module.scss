@@ -21,13 +21,13 @@ $secondary-blue: #5970ff;
   height: 93px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   nav {
-    margin-left: 108px;
+    margin-left: 273px;
     display: flex;
     align-items: center;
   }
-
 }
 
 .header__menu {
@@ -35,6 +35,19 @@ $secondary-blue: #5970ff;
   justify-content: space-between;
   align-items: center;
   width: 236px;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  a:active {
+    color: #000;
+  }
+}
+
+.header__loginWrapper {
+  width: 414px;
+  display: flex;
+  justify-content: end;
 }
 
 .header__login {
@@ -42,6 +55,13 @@ $secondary-blue: #5970ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  a:active {
+    color: #000;
+  }
 }
 .header__verticalLine {
   color: #029491;
@@ -58,4 +78,62 @@ $secondary-blue: #5970ff;
   background-color: #7ce3e1;
   border-radius: 5px;
   font-weight: 500;
+}
+
+.header__avatarContainer {
+  width: 414px;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__info {
+  width: 175px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: #f3f3f3;
+  border-radius: 5px;
+}
+
+.header__usedCompanies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  font-weight: 400;
+  font-size: 10px;
+  .limit {
+    margin-top: 7px;
+  }
+}
+
+.header__numbers {
+  margin-left: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.header__avatar {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  img {
+    margin-left: 4px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.header__name span {
+  font-weight: 400;
+  font-size: 10px;
+  opacity: 0.4;
 }

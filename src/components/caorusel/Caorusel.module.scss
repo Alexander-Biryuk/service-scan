@@ -1,0 +1,59 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+}
+
+.sliderContainer {
+  width: 1310px;
+  height: 265px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSlider {
+  // transform: translateX(20px);
+  transition: 0.5s ease-in-out;
+  width: 2115px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.part2__leftArrow {
+  cursor: pointer;
+  margin-left: -25px;
+}
+
+.part2__rightArrow {
+  cursor: pointer;
+  margin-right: -25px;
+}
+
+.mySlider {
+  height: 240px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.myLeftArrow {
+  background: url('../../assets/left-arrow.svg');
+  width: 39px;
+  height: 39px;
+  position: relative;
+  top: 150px;
+  left: -35px;
+  cursor: pointer;
+}
+.myRightArrow {
+  background: url('../../assets/right-arrow.svg');
+  width: 39px;
+  height: 39px;
+  position: relative;
+  top: -150px;
+  right: -1300px;
+  cursor: pointer;
+}
