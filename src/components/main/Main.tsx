@@ -1,18 +1,19 @@
-import styles from './Main.module.scss';
-import picture from '../../assets/main.png';
-import picture2 from '../../assets/main2.svg';
-import clock from '../../assets/clock.svg';
-import loupe from '../../assets/loupe.svg';
-import shield from '../../assets/shield.svg';
-import rightArrow from '../../assets/right-arrow.svg';
-import leftArrow from '../../assets/left-arrow.svg';
-import CarouselCard from '../carousel_card/CarouselCard';
-import TarifsCard from '../tarifs_card/TarifsCard';
-import lamp from '../../assets/lamp.svg';
-import target from '../../assets/target.svg';
-import notebook from '../../assets/notebook.svg';
-import Caorusel from '../caorusel/Caorusel';
-import Caorusel3 from '../caorusel/Caorusel3';
+import styles from "./Main.module.scss";
+import picture from "../../assets/main.png";
+import picture2 from "../../assets/main2.svg";
+// import clock from '../../assets/clock.svg';
+// import loupe from '../../assets/loupe.svg';
+// import shield from '../../assets/shield.svg';
+// import rightArrow from '../../assets/right-arrow.svg';
+// import leftArrow from '../../assets/left-arrow.svg';
+// import CarouselCard from '../carousel_card/CarouselCard';
+import TarifsCard from "../tarifs_card/TarifsCard";
+import lamp from "../../assets/lamp.svg";
+import target from "../../assets/target.svg";
+import notebook from "../../assets/notebook.svg";
+// import Caorusel from '../caorusel/Caorusel';
+import Caorusel3 from "../caorusel/Caorusel3";
+import { Link } from "react-router-dom";
 
 export default function Main() {
   return (
@@ -31,9 +32,13 @@ export default function Main() {
             Комплексный анализ публикаций, получение данных
             <br />в формате PDF на электронную почту.
           </p>
-          <button className={styles.main__part1Button}>Запросить данные</button>
+          <Link to="query">
+            <button className={styles.main__part1Button}>
+              Запросить данные
+            </button>
+          </Link>
         </div>
-        <img className={styles.main__picture} src={picture} alt='picture' />
+        <img className={styles.main__picture} src={picture} alt="picture" />
       </section>
 
       <section className={styles.main__part2}>
@@ -69,7 +74,7 @@ export default function Main() {
             alt='rightArrow'
           />
         </div> */}
-        <img src={picture2} alt='' />
+        <img src={picture2} alt="" />
       </section>
 
       <section className={styles.main__part3}>
@@ -77,63 +82,63 @@ export default function Main() {
         <div className={styles.part3__tarifsCards}>
           <TarifsCard
             data={{
-              header: 'Beginner',
-              description: 'Для небольшого исследования',
+              header: "Beginner",
+              description: "Для небольшого исследования",
               logo: lamp,
-              current: 'block',
-              price1: '799 ₽',
-              price2: '1 200 ₽',
-              content: 'или 150 ₽/мес. при рассрочке на 24 мес.',
-              list1: 'Безлимитная история запросов',
-              list2: 'Безопасная сделка',
-              list3: 'Поддержка 24/7',
-              button: 'Перейти в личный кабинет',
+              current: "block",
+              price1: "799 ₽",
+              price2: "1 200 ₽",
+              content: "или 150 ₽/мес. при рассрочке на 24 мес.",
+              list1: "Безлимитная история запросов",
+              list2: "Безопасная сделка",
+              list3: "Поддержка 24/7",
+              button: "Перейти в личный кабинет",
               colors: {
-                header: { bg: '#FFB64F', col: '#000' },
-                button: { bg: '#D2D2D2', col: '#000' },
+                header: { bg: "#FFB64F", col: "#000" },
+                button: { bg: "#D2D2D2", col: "#000" },
               },
             }}
           />
           <TarifsCard
             data={{
-              header: 'Pro',
-              description: 'Для HR и фрилансеров',
+              header: "Pro",
+              description: "Для HR и фрилансеров",
               logo: target,
-              current: '0',
-              price1: '1299 ₽',
-              price2: '2 600 ₽',
-              content: 'или 279 ₽/мес. при рассрочке на 24 мес.',
-              list1: 'Все пункты тарифа Beginner',
-              list2: 'Экспорт истории',
-              list3: 'Рекомендации по приоритетам',
-              button: 'Подробнее',
+              current: "0",
+              price1: "1299 ₽",
+              price2: "2 600 ₽",
+              content: "или 279 ₽/мес. при рассрочке на 24 мес.",
+              list1: "Все пункты тарифа Beginner",
+              list2: "Экспорт истории",
+              list3: "Рекомендации по приоритетам",
+              button: "Подробнее",
               colors: {
-                header: { bg: '#7CE3E1', col: '#000' },
-                button: { bg: '#5970FF', col: '#fff' },
+                header: { bg: "#7CE3E1", col: "#000" },
+                button: { bg: "#5970FF", col: "#fff" },
               },
             }}
           />
           <TarifsCard
             data={{
-              header: 'Business',
-              description: 'Для корпоративных клиентов',
+              header: "Business",
+              description: "Для корпоративных клиентов",
               logo: notebook,
-              current: '0',
-              price1: '2379 ₽',
-              price2: '3 700 ₽',
-              content: '',
-              list1: 'Все пункты тарифа Pro',
-              list2: 'Безлимитное количество запросов',
-              list3: 'Приоритетная поддержка',
-              button: 'Подробнее',
+              current: "0",
+              price1: "2379 ₽",
+              price2: "3 700 ₽",
+              content: "",
+              list1: "Все пункты тарифа Pro",
+              list2: "Безлимитное количество запросов",
+              list3: "Приоритетная поддержка",
+              button: "Подробнее",
               colors: {
-                header: { bg: '#000', col: '#fff' },
-                button: { bg: '#5970FF', col: '#fff' },
+                header: { bg: "#000", col: "#fff" },
+                button: { bg: "#5970FF", col: "#fff" },
               },
             }}
           />
         </div>
-        <Caorusel />
+        {/* <Caorusel /> */}
       </section>
     </main>
   );

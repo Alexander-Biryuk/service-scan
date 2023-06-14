@@ -11,7 +11,8 @@ export default function Header() {
         <nav>
           <ul className={styles.header__menu}>
             <Link to='/' className={styles.header__menuItem}>Главная</Link>
-            <li className={styles.header__menuItem}>Тарифы</li>
+            {/* <li className={styles.header__menuItem}>Тарифы</li> */}
+            <Link to='results' className={styles.header__menuItem}>Тарифы</Link>
             <li className={styles.header__menuItem}>FAQ</li>
           </ul>
         </nav>

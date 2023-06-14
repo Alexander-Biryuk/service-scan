@@ -1,7 +1,7 @@
 import styles from './Auth.module.scss';
 import picture from '../../assets/Characters.svg';
 import { Formik } from 'formik';
-import MyForm from './Form';
+import MyForm from './AuthForm';
 
 export default function Auth() {
   return (

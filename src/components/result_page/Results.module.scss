@@ -1,0 +1,128 @@
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 69px;
+}
+
+.hederContainer {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heder {
+  width: 509px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: "Ferry";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+  p {
+    margin-top: 36px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+}
+
+.summary {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summaryHeader {
+  h2 {
+    font-family: "Ferry";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  p {
+    margin-top: 17px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #949494;
+  }
+}
+.carousel {
+  margin-top: 27px;
+}
+
+.documentsList {
+  margin-top: 107px;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-bottom: 58px;
+    font-family: "Ferry";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+}
+
+.elementContainer {
+  width: 641px;
+  height: 694px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sourceHeader {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  margin: 38px auto 109px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.showMoreButton {
+  width: 305px;
+  height: 59px;
+  background: #5970ff;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
