@@ -2,13 +2,13 @@
 // import { useFormik } from 'formik';
 
 // interface MyFormValues {
-//   telNumber: string;
+//   login: string;
 //   password: string;
 // }
 // export default function Form() {
 //   const formik = useFormik({
 //     initialValues: {
-//       telNumber: '',
+//       login: '',
 //       password: ''
 //     }
 //   })
@@ -31,12 +31,12 @@ import facebook from '../../assets/Facebook.svg';
 import yandex from '../../assets/Yandex.svg';
 
 interface MyFormValues {
-  telNumber: string;
+  login: string;
   password: string;
 }
 
 export default function MyForm() {
-  const initialValues: MyFormValues = { telNumber: '', password: '' };
+  const initialValues: MyFormValues = { login: '', password: '' };
   // console.log(values);
   return (
     <div className={styles.formContainer}>
