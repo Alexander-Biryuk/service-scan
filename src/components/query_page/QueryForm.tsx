@@ -50,7 +50,9 @@ export default function MyQueryForm() {
             <label className={styles.tonality} htmlFor='tonality'>
               Тональность
               <Field name='tonality' as='select' className={styles.innField}>
-                <option value=''>любая</option>
+                <option value='любая'>любая</option>
+                <option value='позитивная'>позитивная</option>
+                <option value='негативная'>негативная</option>
               </Field>
               <ErrorMessage name='tonality' />
             </label>
